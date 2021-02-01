@@ -1,0 +1,49 @@
+
+.wbdv-sticky-top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.wbdv-padding-5px {
+    padding: 5px;
+}
+
+.color-me-red {
+  color: red;
+}
+
+.color-me-gray {
+  background: #C4BFBF;
+}
+
+.color-me-light-gray {
+  background-color: #DFDFDF;
+}
+
+.color-me-blue {
+  background: #278FF0;
+}
+
+.color-me-white {
+  background: white;
+}
+
+.border-me-gray{
+  border-style: solid;
+  border-width: thin;
+  border-color: #DFDFDF;
+}
+
+.color-me-light-gray-text{
+  color: #DFDFDF;
+}
+
+.wbdv-plus-add-course{
+    position: absolute; top: 92%; right:5%
+}
+
+.wbdv-main-screen{
+    height: 100vh;
+    width: 100vw;
+}
