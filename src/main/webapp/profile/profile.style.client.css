@@ -1,0 +1,26 @@
+.wbdv-username {
+    background-color: #D3D3D3
+ }
+
+.wbdv-update {
+    background-color: red;
+    border-color: red;
+}
+
+.wbdv-logout {
+    background-color: green;
+    border-color: green;
+}
+
+.wbdv-success-message {
+    background-color: #90EE90;
+}
+
+.wbdv-success-message::placeholder{
+    color: #006400;
+}
+
+.wbdv-verify-password{
+    margin-right: 150px;
+}
+
