@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="user-admin.style.client.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../services/user.service.client.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <h1 id="the-user-list-heading">User Admin</h1>
+<!--    <button id="wbdv-create-user">Add User</button>-->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>
+                <input class="form-control wbdv-username-fld"
+                       placeholder ="Username"></th><!--title-->
+            <th>
+                <input type="password"
+                       class="form-control wbdv-password-fld"
+                       placeholder="Password"></th>
+            <th>
+                <input class="form-control wbdv-firstname-fld"
+                       placeholder="First Name"></th>
+            <th>
+                <input class="form-control wbdv-lastname-fld"
+                       placeholder="Last Name"></th>
+            <th>
+                <select class="form-control wbdv-role-fld">
+                    <option>Faculty</option>
+                    <option>Student</option>
+                    <option>Admin</option>
+                </select>
+            </th>
+<!--            <td >-->
+<!--                -->
+<!--                  -->
+<!--                  -->
+<!--                -->
+<!--            </td>-->
+
+            <th class="wbdv-actions">
+                <span class="pull-right">
+                    <button class="btn wbdv-search-btn wbdv-button-style">
+                        <i class="fa-2x fas fa-search"></i>
+                    </button>
+                    <button class="btn wbdv-create-btn wbdv-button-style">
+                        <i class="fa-2x fas fa-plus"></i>
+                    </button>
+                    <button class="btn wbdv-update-btn wbdv-button-style">
+                        <i class="fa-2x fas fa-check"></i>
+                    </button>
+                </span>
+            </th>
+        </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script src="user-admin.controller.client.js"></script> <!--We put it bottom to make sure that all objects that we are referencing are created.-->
+</body>
+</html>
+
+
+
