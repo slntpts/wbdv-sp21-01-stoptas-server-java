@@ -27,6 +27,9 @@ function selectUser(event) {
   $firstnameFld.val(selectedUser.firstname)
   $lastnameFld.val(selectedUser.lastname)
   $roleFld.val(selectedUser.role)
+
+  //set password visible
+  $passwordFld.attr("type", "text")
 }
 
 function deleteUser(event) {
@@ -53,7 +56,7 @@ function renderUsers(users) {
       .append(`
     <tr>
         <td>${user.username}</td>
-        <td>${user.password}</td>
+        <td>*******</td>
         <td>${user.firstname}</td>
         <td>${user.lastname}</td>
         <td>${user.role}</td>
@@ -76,6 +79,7 @@ function renderUsers(users) {
     .click(deleteUser)//not call, hold that delete function. So we call it without paranthesis"()"
   jQuery(".wbdv-select")
     .click(selectUser)
+
 }
 
 function updateUser() {
@@ -91,6 +95,9 @@ function updateUser() {
       users[index] = selectedUser
       renderUsers(users)
     })
+
+    //set password hide
+    $passwordFld.attr("type", "password")
 }
 
 
