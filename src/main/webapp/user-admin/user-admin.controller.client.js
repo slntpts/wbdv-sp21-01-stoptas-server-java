@@ -96,6 +96,11 @@ function updateUser() {
       renderUsers(users)
     })
 
+    $usernameFld.val("")
+    $passwordFld.val("")
+    $firstnameFld.val("")
+    $lastnameFld.val("")
+
     //set password hide
     $passwordFld.attr("type", "password")
 }
