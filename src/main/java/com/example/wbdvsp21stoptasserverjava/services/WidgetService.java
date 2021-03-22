@@ -75,8 +75,6 @@ public class WidgetService {
     }
 
     public Integer updateWidget(Long id, Widget widget) {
-
-        System.out.println("IWIDGETEEE:" + widget.toString());
         for(int i=0; i < widgets.size(); i++){
             if(widget != null && widgets.get(i) != null && widgets.get(i).getId().equals(id)){
                 widgets.set(i,widget);
