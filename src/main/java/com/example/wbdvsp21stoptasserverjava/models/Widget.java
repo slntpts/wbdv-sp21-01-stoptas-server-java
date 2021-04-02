@@ -1,6 +1,13 @@
 package com.example.wbdvsp21stoptasserverjava.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//use auto increment
     private Long id;
     private String type;
     private Integer size;
@@ -16,15 +23,27 @@ public class Widget {
     private String cssClass;
     private String style;
     private String value;
+    private Boolean ordered;
 
     //TODO add other fields written in description.
 
-    public Widget(Long id, String topicId, String type, Integer size, String text) {
+    public Widget(Long id, String type, Integer size, String text, String topicId, String name, Integer widgetOrder, String src, String url, String href, Integer width, Integer height, String cssClass, String style, String value, Boolean ordered) {
         this.id = id;
-        this.topicId = topicId;
         this.type = type;
         this.size = size;
         this.text = text;
+        this.topicId = topicId;
+        this.name = name;
+        this.widgetOrder = widgetOrder;
+        this.src = src;
+        this.url = url;
+        this.href = href;
+        this.width = width;
+        this.height = height;
+        this.cssClass = cssClass;
+        this.style = style;
+        this.value = value;
+        this.ordered = ordered;
     }
 
     public Widget() {
@@ -148,5 +167,13 @@ public class Widget {
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    public Boolean getOrdered() {
+        return ordered;
+    }
+
+    public void setOrdered(Boolean ordered) {
+        this.ordered = ordered;
     }
 }
