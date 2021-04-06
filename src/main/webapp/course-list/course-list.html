@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!--    <link href="course.style.client.css" rel="stylesheet" />-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../services/course.service.client.js"></script>
+<!--    <script src="../course-list/course.controller.client.js"></script>-->
+
+<!--    <style>-->
+<!--        h1 {-->
+<!--            background-color: red-->
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+    <div class="container-fluid">
+    <h1 id="the-course-list-heading">Course List</h1>
+        <button id="wbdv-create-course">Add Course</button>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Seats</th>
+                <th>Semester</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>
+                    <input class="form-control wbdv-title-fld"></th>
+                <th>
+                    <input
+                            type="number"
+                            class="form-control wbdv-seats-fld"></th>
+                <th>
+                    <select class="form-control wbdv-semester-fld">
+                        <option>Spring</option>
+                        <option>Summer</option>
+                        <option>Fall</option>
+                    </select>
+                </th>
+                <th>
+                    <button class="wbdv-update-btn">Update</button>
+                    <button class="wbdv-create-btn">Create</button>
+                </th>
+            </tr>
+            </thead>
+
+            <tbody>
+<!--                <tr>-->
+<!--                    <td>CS5610</td>-->
+<!--                    <td>90</td>-->
+<!--                    <td>Spring</td>-->
+<!--                    <td>-->
+<!--                        <button>Delete</button>-->
+<!--                        <button>Select</button>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>CS5610</td>-->
+<!--                    <td>90</td>-->
+<!--                    <td>Spring</td>-->
+<!--                    <td>-->
+<!--                        <button>Delete</button>-->
+<!--                        <button>Select</button>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>CS5610</td>-->
+<!--                    <td>90</td>-->
+<!--                    <td>Spring</td>-->
+<!--                    <td>-->
+<!--                        <button>Delete</button>-->
+<!--                        <button>Select</button>-->
+<!--                    </td>-->
+<!--                </tr>-->
+            </tbody>
+        </table>
+    </div>
+    <script src="course.controller.client.js"></script> <!--We put it bottom to make sure that all objects that we are referencing are created.-->
+</body>
+</html>
+
+
+

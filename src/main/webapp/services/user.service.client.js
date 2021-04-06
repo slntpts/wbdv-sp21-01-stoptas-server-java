@@ -3,9 +3,9 @@ function UserServiceClient() {
   this.findAllUsers = findAllUsers;
   this.findUserById = findUserById;
   this.deleteUser = deleteUser;
-  this.updateUser = updateUser;
+  this.updateUser = updateUser;//"this" used here is different than the Java. Here this means that the data bound to the that created UserServiceClient. We cannot use it in fetch below.
   this.url = 'https://wbdv-generic-server.herokuapp.com/api/001597039/users';
-  var self = this;
+  var self = this;//Instead of "this", we use "self" here which means the original data
   function createUser(user) {
     return fetch(self.url, {
       method: 'POST',
